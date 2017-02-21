@@ -15,7 +15,7 @@ var dolarTodayPrice = new XMLHttpRequest();
 
 		dolarTodayPrice.send();
 
-	$('#btc').keyup(function() {
+	$('#getPrice').click(function() {
 		var bitcoinPriceRequest = new XMLHttpRequest();
 				bitcoinPriceRequest.open('GET', 'https://api.coindesk.com/v1/bpi/currentprice/usd.json');
 
