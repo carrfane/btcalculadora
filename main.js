@@ -17,7 +17,7 @@ var dolarTodayPrice = new XMLHttpRequest();
 
 	$('#btc').keyup(function() {
 		var bitcoinPriceRequest = new XMLHttpRequest();
-				bitcoinPriceRequest.open('GET', 'http://api.coindesk.com/v1/bpi/currentprice/usd.json');
+				bitcoinPriceRequest.open('GET', 'https://api.coindesk.com/v1/bpi/currentprice/usd.json');
 
 		bitcoinPriceRequest.onload= function(){
 			var btcData = JSON.parse(bitcoinPriceRequest.responseText);
@@ -32,7 +32,7 @@ var dolarTodayPrice = new XMLHttpRequest();
 
 	$('#getPriceUsdBtc').click(function() {
 		var bitcoinPriceRequest = new XMLHttpRequest();
-				bitcoinPriceRequest.open('GET', 'http://api.coindesk.com/v1/bpi/currentprice/usd.json');
+				bitcoinPriceRequest.open('GET', 'https://api.coindesk.com/v1/bpi/currentprice/usd.json');
 
 		bitcoinPriceRequest.onload= function(){
 			var btcData = JSON.parse(bitcoinPriceRequest.responseText);
